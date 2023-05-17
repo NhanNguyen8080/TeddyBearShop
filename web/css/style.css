@@ -1,0 +1,481 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: content-box;
+    overflow-x: hidden;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+h1 {
+    overflow: hidden;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('../images/background6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.back_to_login {
+    color: #000;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 30px;
+}
+
+.cart_table {
+    margin-top: 35px;
+    margin-bottom: 27.5px;
+    border-collapse: collapse; 
+    width: 80%;
+    border-spacing: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+table{
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+thead .product {
+    padding-left: 110px;
+}
+
+.cart_buying {
+    margin-left: 47%;
+    transform: translateX(-50%);
+    color: brown;
+    text-decoration: underline;
+}
+
+.cart_buying:hover {
+    color: brown;
+    text-decoration: underline;
+
+}
+
+.cart_row {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.cart_product {
+    display: flex;
+    padding: 10px 50px 10px 20px;
+}
+
+.cart_product .cart_img {
+    padding-right: 20px;
+}
+
+.total_payment {
+    display: inline-block;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.total {
+    width: 30%;
+}
+
+.payment {
+    width: max-content;
+    float: right;
+    margin-right: 75px;
+    height: 44px;
+} 
+
+.payment a {
+    color: #000;
+}
+
+.payment a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.payment button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: burlywood;
+    /*float: right;*/
+}
+
+.payment button:hover {
+    background-color: bisque;
+}
+
+.cart_message {
+    text-align: center;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+h2{
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #000;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-8%);
+    color: #000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #000;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #000;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+
+}
+.forget label a{
+    color: #000;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.forget .forget_password {
+    display: inline-block;
+    margin-left: 65px;
+}
+
+.register{
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.submit {
+    width: 315px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+.error_message {
+    color: red;
+}
+
+
+footer {
+    font-family: Roboto;
+}
+
+.footer-distributed{
+    background: #444;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 40px;
+    overflow: hidden;
+}
+
+/*section {
+    width: 100%;
+    display: inline-block;
+    background: #ccc;
+    height: 60vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}*/
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color: brown;
+    font: normal 36px 'Roboto', cursive;
+    margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+    color:  #fff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+    margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    float: right;
+}
+
+.footer-distributed .footer-right p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:  #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color:  #d1d2d2;
+
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color:  #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+    color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+    border-radius: 3px;
+    background-color:  #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+}
+
+
+/*INFO PAGE*/
+.info > div{
+    display: flex;
+}
+
+.info__form {
+    width: 60%;
+    margin-left: 210px;
+    margin-top: 90px;
+
+}
+
+.info__products {
+    width: 25%;
+    float: right;
+    margin-right: 100px;
+    margin-top: -55px;
+}
+
+.info__products__product_list img{
+    width: 50px;
+    height: 50px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-company-name{
+        font-size: 12px;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea{
+        width: 250px;
+    }
+
+    .footer-distributed form button{
+        padding: 10px 35px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .footer-distributed{
+        padding: 30px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right{
+        float: none;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer-distributed .footer-left{
+        margin-bottom: 40px;
+    }
+
+    .footer-distributed form{
+        margin-top: 30px;
+    }
+
+    .footer-distributed form{
+        display: block;
+    }
+
+    .footer-distributed form button{
+        float: none;
+    }
+}
