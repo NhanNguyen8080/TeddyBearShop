@@ -1,1 +1,1 @@
-# TeddyBearShop
+# teddy-bear-shop
